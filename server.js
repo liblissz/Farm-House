@@ -309,7 +309,7 @@ app.delete("/conversations", async (_, res) => {
 
 const versionInfo = {
     latestVersion: "1.2.0",
-    downloadUrl: "https://yourserver.com/MyAppSetup.exe"
+    downloadUrl: "https://github.com/liblissz/languageApp/blob/main/setup.exe"
 };
 
 
@@ -322,3 +322,4 @@ app.listen(port, () => {
   console.log(`🚀 Server running at ${server}:${port}`);
 
 });
+
