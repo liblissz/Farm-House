@@ -306,7 +306,19 @@ app.delete("/conversations", async (_, res) => {
   }
 });
 
+
+const versionInfo = {
+    latestVersion: "1.2.0",
+    downloadUrl: "https://yourserver.com/MyAppSetup.exe"
+};
+
+
+app.get('/version', (req, res) => {
+    res.json(versionInfo);
+});
+
 // START SERVER
 app.listen(port, () => {
   console.log(`🚀 Server running at ${server}:${port}`);
+
 });
